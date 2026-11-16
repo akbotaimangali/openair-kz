@@ -1,8 +1,12 @@
 # OpenAir KZ
 
+[![CI](https://github.com/akbotaimangali/openair-kz/actions/workflows/ci.yml/badge.svg)](https://github.com/akbotaimangali/openair-kz/actions/workflows/ci.yml)
+[![Deploy](https://github.com/akbotaimangali/openair-kz/actions/workflows/deploy.yml/badge.svg)](https://github.com/akbotaimangali/openair-kz/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 > Open-source air quality dashboard for cities in Kazakhstan, built on open data.
 
-**Live demo:** _TODO: add GitHub Pages link_ · **Repository:** _TODO: add GitHub link_
+**Live demo:** https://akbotaimangali.github.io/openair-kz/ · **Repository:** https://github.com/akbotaimangali/openair-kz
 
 ## Description
 OpenAir KZ shows the current air quality (US AQI, PM2.5, PM10) for Kazakh cities, a 3-day chart (last 24 h + 48 h forecast), a colour scale from "Good" to "Hazardous" with short general advice, and lets you download the data as CSV. The interface is available in Kazakh, Russian and English. It needs no accounts, no API keys and collects no personal data.
@@ -27,7 +31,7 @@ More detail: [docs/concept.md](docs/concept.md) and [docs/dpg-checklist.md](docs
 Requirements: [Node.js](https://nodejs.org) 20 or newer.
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/akbotaimangali/openair-kz.git
 cd openair-kz
 npm install
 npm run dev        # open the printed local address in a browser
@@ -41,6 +45,9 @@ npm run preview    # preview the production build
 ```
 
 If the live API cannot be reached, the app shows bundled **sample data** and says so on the page.
+
+### Deployment
+Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): it installs dependencies, runs the tests, builds the site with Vite and publishes `dist/` to **GitHub Pages**. One-time setup: *Settings → Pages → Source: GitHub Actions*.
 
 ## How to contribute
 We welcome code, translations, new cities and documentation. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the fork → branch → Pull Request workflow, and our [Code of Conduct](CODE_OF_CONDUCT.md).
@@ -65,7 +72,7 @@ src/          app code (aqi.js logic, api.js data, i18n.js, cities.js, main.js U
 public/       sample.json (offline demo data)
 test/         unit tests (node --test)
 docs/         concept and documentation
-.github/      CI, Dependabot, issue and PR templates
+.github/      CI, GitHub Pages deploy, Dependabot, issue and PR templates
 ```
 
 ## Team members & roles
