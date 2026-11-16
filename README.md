@@ -76,7 +76,7 @@ _TODO: fill in real names and GitHub usernames._
 | _Name 1_ | @username | PM / Analyst | concept, SWOT, report |
 | _Name 2_ | @username | Developer (core) | repo setup, data/API, tests, Dependabot |
 | _Name 3_ | @username | Developer (UI) | interface, chart, i18n |
-| _Name 4_ | @username | Designer / Docs | prototype, README, CONTRIBUTING |
+| _Name 4_ | @maralbaigoz | Designer / Docs | prototype, README, CONTRIBUTING |
 
 ## AI usage disclosure
 _TODO: edit to match what your team really did._ See [docs/ai-disclosure.md](docs/ai-disclosure.md).
