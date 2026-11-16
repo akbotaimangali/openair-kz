@@ -100,3 +100,12 @@ footer a { color: var(--accent); }
 @media (max-width: 480px) {
   .aqi-value { font-size: 2.8rem; }
 }
+/* Mobile: stack controls and make buttons easy to tap */
+@media (max-width: 600px) {
+ .top { flex-direction: column; align-items: stretch; }
+ .controls { flex-direction: column; }
+ .controls label, select { width: 100%; }
+ .chart-wrap { height: 240px; }
+ .actions button { width: 100%; min-height: 44px; }
+}
+
