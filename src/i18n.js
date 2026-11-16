@@ -13,6 +13,7 @@ export const STRINGS = {
     sourceSample: 'Offline mode: showing bundled SAMPLE data, not real measurements',
     loading: 'Loading…',
     noData: 'No data',
+    updated: 'Updated (city local time)',
     scale: 'AQI scale',
     disclaimer: 'Informational only, not medical advice.',
     cat: {
@@ -45,6 +46,7 @@ export const STRINGS = {
     sourceSample: 'Офлайн-режим: показаны встроенные ТЕСТОВЫЕ данные, а не реальные измерения',
     loading: 'Загрузка…',
     noData: 'Нет данных',
+    updated: 'Обновлено (местное время города)',
     scale: 'Шкала AQI',
     disclaimer: 'Только информация, не медицинская рекомендация.',
     cat: {
@@ -77,6 +79,7 @@ export const STRINGS = {
     sourceSample: 'Офлайн режим: нақты өлшем емес, ТЕСТІЛІК деректер көрсетілген',
     loading: 'Жүктелуде…',
     noData: 'Дерек жоқ',
+    updated: 'Жаңартылды (қаланың жергілікті уақыты)',
     scale: 'AQI шкаласы',
     disclaimer: 'Тек ақпарат үшін, медициналық кеңес емес.',
     cat: {
