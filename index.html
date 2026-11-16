@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenAir KZ</title>
+    <meta name="description" content="Open-source air quality dashboard for cities in Kazakhstan." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <h1 id="title">OpenAir KZ</h1>
+        <p id="subtitle" class="muted"></p>
+      </div>
+      <div class="controls">
+        <label>
+          <span id="lblCity">City</span>
+          <select id="citySelect"></select>
+        </label>
+        <label>
+          <span id="lblLang">Language</span>
+          <select id="langSelect"></select>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section id="card" class="card" aria-live="polite">
+        <p class="muted" id="lblNow">Right now</p>
+        <div class="now">
+          <div class="aqi-value" id="aqiValue">–</div>
+          <div>
+            <div class="aqi-label muted" id="lblAqi">US AQI</div>
+            <div class="badge" id="aqiBadge">…</div>
+          </div>
+        </div>
+        <p id="advice" class="advice"></p>
+        <p class="muted small">PM2.5: <strong id="pm25">–</strong> µg/m³ · PM10: <strong id="pm10">–</strong> µg/m³</p>
+      </section>
+
+      <section class="card">
+        <h2 id="chartTitle"></h2>
+        <div class="chart-wrap"><canvas id="chart" role="img" aria-label="AQI chart"></canvas></div>
+        <div class="legend" id="legend"></div>
+      </section>
+
+      <section class="actions">
+        <button id="csvBtn" type="button"></button>
+        <p class="muted small" id="source"></p>
+        <p class="muted small" id="disclaimer"></p>
+      </section>
+    </main>
+
+    <footer class="muted small">
+      <a href="https://github.com/" id="repoLink" rel="noopener">GitHub</a> · MIT License · Data: <a href="https://open-meteo.com/" rel="noopener">Open-Meteo</a> (CAMS ENSEMBLE / CAMS Global, Copernicus), non-commercial use
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

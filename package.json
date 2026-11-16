@@ -1,0 +1,19 @@
+{
+  "name": "openair-kz",
+  "version": "0.1.0",
+  "description": "Open-source air quality dashboard for cities in Kazakhstan, built on open data (Open-Meteo).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
