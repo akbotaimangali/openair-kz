@@ -50,6 +50,21 @@ export function parseAirQuality(json) {
 }
 
 /**
+ * Format an Open-Meteo local timestamp ("2026-11-16T21:00") as "16.11.2026 21:00".
+ * Done with plain string parsing (no Date object) so the time is shown exactly as the
+ * API returns it in the city's local time zone, independent of the user's browser time zone.
+ * @param {string|null|undefined} iso
+ * @returns {string|null} null if the value is missing or not in the expected format
+ */
+export function formatTimestamp(iso) {
+  if (typeof iso !== 'string') return null;
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  if (!m) return null;
+  const [, y, mo, d, h, mi] = m;
+  return `${d}.${mo}.${y} ${h}:${mi}`;
+}
+
+/**
  * Serialize hourly data to CSV (data export, one of the DPG requirements).
  * @param {string} cityName
  * @param {Array<{time:string, aqi:number|null, pm25:number|null, pm10:number|null}>} hourly

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { getCategory, parseAirQuality, toCSV } from '../src/aqi.js';
+import { getCategory, parseAirQuality, toCSV, formatTimestamp } from '../src/aqi.js';
 import { buildUrl, loadAirQuality } from '../src/api.js';
 
 test('getCategory returns the right EPA category at the boundaries', () => {
@@ -82,4 +82,15 @@ test('loadAirQuality reports live source on success', async () => {
   };
   const { source } = await loadAirQuality({ lat: 1, lon: 2 }, async () => ({ ok: true, json: async () => live }));
   assert.equal(source, 'live');
+});
+
+test('formatTimestamp shows the API local time as DD.MM.YYYY HH:MM', () => {
+  assert.equal(formatTimestamp('2026-11-16T21:00'), '16.11.2026 21:00');
+  assert.equal(formatTimestamp('2026-01-05T07:45'), '05.01.2026 07:45');
+});
+
+test('formatTimestamp returns null for missing or malformed values', () => {
+  assert.equal(formatTimestamp(null), null);
+  assert.equal(formatTimestamp(undefined), null);
+  assert.equal(formatTimestamp('yesterday'), null);
 });

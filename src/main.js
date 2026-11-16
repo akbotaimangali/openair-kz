@@ -8,7 +8,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { CATEGORIES, getCategory, toCSV } from './aqi.js';
+import { CATEGORIES, getCategory, toCSV, formatTimestamp } from './aqi.js';
 import { CITIES } from './cities.js';
 import { loadAirQuality } from './api.js';
 import { STRINGS, LANGS } from './i18n.js';
@@ -74,6 +74,9 @@ function renderCurrent() {
     $('advice').textContent = '';
   }
   $('source').textContent = source === 'live' ? s.sourceLive : s.sourceSample;
+  // Show when the data was last updated, so users know how fresh it is.
+  const updated = formatTimestamp(data.current.time);
+  $('updated').textContent = updated ? `${s.updated}: ${updated}` : '';
 }
 
 function renderChart() {
