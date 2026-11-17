@@ -52,9 +52,22 @@ See [swot-positioning.md](swot-positioning.md).
 **Out of scope (future work):** ground sensor integration, mobile app, notifications, user accounts, historical archive.
 
 ## 10. Link to course material (SIS 1-15)
-> TODO (team): fill in using YOUR own SIS answers. Example format: "SIS 4 (licensing): we compared MIT vs GPL and chose MIT because ...".
 
 | SIS | Concept | How we used it |
 |---|---|---|
-| 1 | _..._ | _..._ |
-| ... | | |
+| 1 | Open Source in Your Life | We created a free, open-source air quality website for people in Kazakhstan. |
+| 2 | The Impact of Open Source Projects | We used the idea of sharing technology and information for public benefit. |
+| 3 | Digital Public Goods Standard | We connected our project to SDGs 3, 11 and 13 and reviewed DPG principles. |
+| 4 | Contribution Guide and Community Engagement | We included CONTRIBUTING.md to help new contributors join the project. |
+| 5 | Project Roadmap and Governance | We divided responsibilities among four team members and organized tasks using GitHub Issues. |
+| 6 | Anatomy of a Collaborative Project | We used GitHub Issues, Pull Requests and reviews for team collaboration. |
+| 7 | Your First Contribution Simulation | We created branches, made changes, submitted Pull Requests and reviewed contributions. |
+| 8 | Open Source Project Metrics | We can monitor commits, Pull Requests and contributors to evaluate project activity. |
+| 9 | CI/CD and Security | We use GitHub Actions to automatically run tests and check code changes. |
+| 10 | Documentation Quality | We included README.md, CONTRIBUTING.md and CODE_OF_CONDUCT.md to help users and contributors. |
+| 11 | Not covered yet | To be added after completing SIS 11. |
+| 12 | Not covered yet | To be added after completing SIS 12. |
+| 13 | Not covered yet | To be added after completing SIS 13. |
+| 14 | Not covered yet | To be added after completing SIS 14. |
+| 15 | Not covered yet | To be added after completing SIS 15. |
+
