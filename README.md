@@ -76,14 +76,14 @@ docs/         concept and documentation
 ```
 
 ## Team members & roles
-_TODO: fill in real names and GitHub usernames._
+
 
 | Name | GitHub | Role | Contributions |
 |---|---|---|---|
-| _Name 1_ | @username | PM / Analyst | concept, SWOT, report |
-| _Name 2_ | @username | Developer (core) | repo setup, data/API, tests, Dependabot |
-| _Name 3_ | @username | Developer (UI) | interface, chart, i18n |
-| _Name 4_ | @username | Designer / Docs | prototype, README, CONTRIBUTING |
+| Akbota Imangali | @akbotaimangali | Dev (core) | repo setup, last updated, Pages, CI |
+| Beisenbay Dariga | @darigabeisenbay | Dev (UI) | new cities + tests, mobile layout |
+| Leila Bakhytzhan | @Leilaa-g | PM / Analyst | problem, sources, SWOT, SIS table |
+| Maral Baigoz | @maralbaigoz | Designer / Docs | prototype, README, AI disclosure, i18n |
 
 ## AI usage disclosure
 _TODO: edit to match what your team really did._ See [docs/ai-disclosure.md](docs/ai-disclosure.md).
