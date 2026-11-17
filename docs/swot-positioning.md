@@ -1,15 +1,24 @@
 # Competitors, SWOT and positioning
 
-> TODO (team): **verify every statement about competitors on their real websites** and cite the date you checked. The rows below are a starting hypothesis, not verified facts.
-
 ## Competitors / alternatives (to verify)
 | Alternative | Type | Open source? | Accounts / ads? | Local languages (kk/ru)? | Data export? |
 |---|---|---|---|---|---|
-| IQAir / AirVisual | Commercial app and website | _check_ | _check_ | _check_ | _check_ |
-| World Air Quality Index (waqi.info) | Aggregator website | _check_ | _check_ | _check_ | _check_ |
-| Official national weather/environment service pages (e.g. Kazhydromet) | Government | _check_ | _check_ | _check_ | _check_ |
-| Open-Meteo website itself | Open data API | _check_ | _check_ | _check_ | API only |
+| IQAir / AirVisual | Commercial website and app | Not confirmed | Public map; account for device data export | Russian: yes; Kazakh: not confirmed | CSV for device data |
+| World Air Quality Index (WAQI) | Air quality aggregator | Not confirmed | Public map; API token required; ads not verified | Russian: yes; Kazakh: not confirmed | JSON API; CSV not confirmed |
+| Kazhydromet | Government environmental service | Not confirmed | Public information; ads not verified | Kazakh and Russian: yes | Public reports; CSV not confirmed |
+| Open-Meteo | Open-source API | Yes (AGPLv3) | No account or key for free non-commercial API; ads not verified | Kazakh/Russian: not confirmed | JSON, CSV and XLSX |
 | **OpenAir KZ** | Open-source dashboard | Yes (MIT) | No accounts, no ads | Kazakh, Russian, English | CSV in UI |
+
+**Sources:**
+
+1. IQAir: https://www.iqair.com/
+2. IQAir data export: https://www.iqair.com/ru/support/knowledge-base/download-or-export-your-airvisual-devices-data
+3. WAQI: https://waqi.info/
+4. WAQI API: https://aqicn.org/api/
+5. Kazhydromet: https://www.kazhydromet.kz/
+6. Open-Meteo: https://open-meteo.com/
+7. Open-Meteo GitHub: https://github.com/open-meteo/open-meteo
+Checked by Leila Bakhytzhan on 17 November 2026.
 
 ## SWOT
 | | Helpful | Harmful |
