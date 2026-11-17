@@ -7,9 +7,20 @@ OpenAir KZ is an open-source web dashboard that shows current and forecast air q
 People need simple, trustworthy air quality information to decide when to ventilate, exercise outdoors or send children outside. Existing tools are often closed, English-first, require accounts, or do not allow data reuse.
 
 ## 3. Problem definition
-> TODO (team): rewrite in your own words and add 1-2 REAL, cited facts (e.g. WHO guidance, a Kazakh official source, a news report). Do not invent statistics.
 
-Draft: Residents of Kazakh cities lack an open, multilingual, easy-to-reuse source of air quality information. Without it, it is harder to protect health, to teach about air pollution, and for students and civic groups to build on shared data.
+Air pollution is an important environmental and health problem in Kazakhstan, especially in large cities such as Almaty. During the cold season, emissions from heating and transport can affect air quality. People need clear information about air pollution to make better decisions about their daily outdoor activities.
+
+According to the World Health Organization (WHO), the recommended annual average concentration of PM2.5 is 5 µg/m³, and the 24-hour guideline level is 15 µg/m³. Kazhydromet reported a high level of air pollution in Almaty in September 2026 and described the influence of heating and traffic on air pollution.
+
+Existing services, including IQAir, WAQI and Kazhydromet, provide useful air quality information, but their interfaces and data access options are different. Our project, OpenAir KZ, aims to make this information easier to understand and reuse. It provides air quality information in Kazakh, Russian and English, does not require an account, and allows users to download CSV data.
+
+OpenAir KZ is an open-source educational project. It uses model-based air quality data, so it does not replace official measurements from ground monitoring stations.
+
+**Sources:**
+
+1. World Health Organization (2021). WHO Global Air Quality Guidelines. https://www.who.int/teams/environment-climate-change-and-health/air-quality-and-health/health-impacts/types-of-pollutants (accessed 17 November 2026).
+2. Kazhydromet (2026). Environmental monitoring bulletin for Almaty and Almaty Region, September 2026. https://www.kazhydromet.kz/uploads/files_calendar/13114/file/6ad202757c690almaty-i-almatinskaya-oblast-rus-2026-sentyabr.pdf (accessed 17 November 2026).
+3. Open-Meteo. Air Quality API Documentation. https://open-meteo.com/en/docs/air-quality-api (accessed 17 November 2026).
 
 ## 4. Target users (personas)
 | Persona | Need | How the project helps |
