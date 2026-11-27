@@ -1,0 +1,17 @@
+# Copy to terraform.tfvars (git-ignored) and fill in. Never commit the real file.
+tenancy_ocid     = "ocid1.tenancy.oc1..aaaa..."
+user_ocid        = "ocid1.user.oc1..aaaa..."
+fingerprint      = "aa:bb:cc:..."
+private_key_path = "~/.oci/oci_api_key.pem"
+region           = "eu-frankfurt-1"
+
+# Optional: a dedicated compartment keeps this apart from your other resources.
+# compartment_ocid = "ocid1.compartment.oc1..aaaa..."
+
+ssh_public_key_path = "~/.ssh/id_ed25519.pub"
+# SSH access: by default only your current public IP (detected on every `tofu apply`).
+# Set this only to override it, e.g. a fixed office range:
+# admin_cidr = "203.0.113.7/32"
+
+# Always Free alternatives: VM.Standard.A1.Flex (default) or VM.Standard.E2.1.Micro
+# shape = "VM.Standard.E2.1.Micro"
