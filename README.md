@@ -49,6 +49,8 @@ If the live API cannot be reached, the app shows bundled **sample data** and say
 ### Deployment
 Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): it installs dependencies, runs the tests, builds the site with Vite and publishes `dist/` to **GitHub Pages**. One-time setup: *Settings → Pages → Source: GitHub Actions*.
 
+**Self-hosting (optional):** [`infra/oci/`](infra/oci/README.md) holds an OpenTofu configuration that creates a small Always Free VM with nginx on Oracle Cloud, and `scripts/deploy-oci.sh` builds and uploads the site to it.
+
 ## How to contribute
 We welcome code, translations, new cities and documentation. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the fork → branch → Pull Request workflow, and our [Code of Conduct](CODE_OF_CONDUCT.md).
 Quick wins: add a city in `src/cities.js`, improve Kazakh/Russian text in `src/i18n.js`.
@@ -73,6 +75,8 @@ public/       sample.json (offline demo data)
 test/         unit tests (node --test)
 docs/         concept and documentation
 .github/      CI, GitHub Pages deploy, Dependabot, issue and PR templates
+infra/oci/    OpenTofu config for optional self-hosting on Oracle Cloud
+scripts/      deploy-oci.sh (build + upload to the OCI server)
 ```
 
 ## Team members & roles
