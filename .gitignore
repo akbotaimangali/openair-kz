@@ -4,3 +4,11 @@ dist/
 .env.*
 .DS_Store
 *.log
+
+# OpenTofu (infra/oci): state and real variables contain IDs and secrets
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
